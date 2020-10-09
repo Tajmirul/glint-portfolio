@@ -1,0 +1,72 @@
+section.about{
+	background-image: url('../img/about-bg-1.png');
+	background-position: top right;
+
+	.shape{
+		&::after{
+			content: '';
+			background-image: url('../img/about-shape2.svg');
+			background-repeat: no-repeat;
+			position: absolute;
+			bottom: -6rem;
+			left: -4rem;
+			height: 28rem;
+			width: 28rem;
+		}
+		&::before{
+			content: '';
+			background-image: url('../img/about-shape2.svg');
+			background-repeat: no-repeat;
+			position: absolute;
+			top: -3rem;
+			right: -4rem;
+			height: 10rem;
+			width: 10rem;
+		}
+	}
+
+	img{
+		object-fit: cover;
+		position: relative;
+		z-index: 1;
+	}
+
+	.play-button{
+		width: 7rem;
+		height: 7rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 2.5rem;
+		background-color: $color-theme;
+		color: $color-white;
+		border-radius: 50%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 1;
+
+		&::before{
+			content: '';
+			position: absolute;
+			height: 7rem;
+			width: 7rem;
+			background: $color-theme;
+			border-radius: 50%;
+			z-index: -1;
+			animation: play-button 2s linear infinite;
+		}
+
+		&::after{
+			content: '';
+			position: absolute;
+			height: 7rem;
+			width: 7rem;
+			background: $color-theme;
+			border-radius: 50%;
+			z-index: -1;
+			animation: play-button 2s .5s linear infinite;
+		}
+	}
+}

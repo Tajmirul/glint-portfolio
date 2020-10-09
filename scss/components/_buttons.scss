@@ -1,0 +1,57 @@
+.button{
+	&-type-1{
+		padding: 5px 1rem;
+		background: $color-theme;
+		color: $color-white !important;
+		font-weight: 700;
+		display: inline-block;
+		font-size: 1.3rem;
+	}
+	&-type-2{
+		background-color: $color-theme;
+		color: $color-white;
+		padding: 1.4rem 2.6rem;
+		font-size: 1.4rem;
+		border-radius: 3px;
+		border: 1px solid $color-theme;
+		display: inline-block;
+
+		i{
+			background-color: $color-white;
+			color: $color-theme;
+			padding: .5rem;
+			border-radius: 5px;
+			font-size: 2rem;
+			margin-left: 1rem;
+		}
+
+		&:hover{
+			color: $color-theme;
+			background-color: transparent;
+			border-color: $color-theme;
+		}
+	}
+	&-type-3{
+		background-color: $color-white;
+		color: $color-black !important;
+		border-radius: 3px;
+		padding: 1rem 1.5rem;
+		font-size: 1.8rem;
+		display: inline-block;
+	}
+
+	&-type-link{
+		color: $color-theme !important;
+		font-size: 1.2rem;
+		font-weight: 700;
+		display: inline-block;
+
+		i{
+			margin-right: 0.5rem;
+			transition: .3s;
+		}
+		&:hover i{
+			margin-right: 1rem;
+		}
+	}
+}

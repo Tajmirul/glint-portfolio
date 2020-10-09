@@ -1,0 +1,48 @@
+.hover-round-effect{
+	position: absolute;
+	bottom: -25%;
+	right: -25%;
+	z-index: -1;
+	height: 32rem;
+	width: 32rem;
+
+	.circles{
+		height: 32rem;
+		width: 32rem;
+		transition: .3s;
+		transform: scale(0);
+
+		div{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 50%;
+		}
+
+		div:nth-child(1){
+			width: 6rem;
+			height: 6rem;
+			background-color: $color-theme;
+			z-index: 5;
+		}
+		div:nth-child(2){
+			width: 14rem;
+			height: 14rem;
+			background-color: lighten($color-theme, 5);
+			z-index: 4;
+		}
+		div:nth-child(3){
+			width: 22rem;
+			height: 22rem;
+			background-color: lighten($color-theme, 10);
+			z-index: 3;
+		}
+		div:nth-child(4){
+			width: 32rem;
+			height: 32rem;
+			background-color: lighten($color-theme, 20);
+			z-index: 2;
+		}
+	}
+}

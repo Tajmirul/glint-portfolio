@@ -1,0 +1,126 @@
+.navBar{
+	position: relative;
+	&-top{
+		background-color: #2E3D44;
+
+		&-left{
+			float: left;
+
+			.chat-icon{
+				background-color: $color-theme;
+				padding: 1rem 1.4rem;
+			}
+		}
+		&-right{
+			float: right;
+			ul{
+				li{
+					a{
+						font-size: 1.4rem;
+					    color: #fff !important;
+					    padding: 1.1rem;
+					    display: block;
+					    border-left: 1px solid #ffffff66;
+					}
+				}
+			}
+		}
+	}
+	&-desktop{
+		border-bottom: .5px solid #383838;
+		position: absolute;
+		top: 4.5rem;
+		left: 0;
+		right: 0;
+
+		.logo-area{
+			padding: 1rem 0;
+		}
+		.navigations{
+			ul{
+				li{
+					position: relative;
+					a{
+						color: $color-white;
+					    padding: 3.5rem 1rem;
+					    font-size: 1.2rem;
+					    font-weight: 700;
+					    letter-spacing: 1px;
+
+					    i{
+					    	margin-left: 5px;
+					    }
+					}
+
+					ul{
+						position: absolute;
+						top: 100%;
+						background-color: #2E3D44;
+						z-index: 1;
+						width: 28rem;
+						padding: 2rem 0;
+
+						li{
+							a{
+								display: block;
+								padding: 1rem 3rem;
+								position: relative;
+
+								span{
+									height: 2px;
+									background-color: $color-theme;
+									display: inline-block;
+									margin-right: 1rem;
+								}
+							}
+
+							&::after{
+								display: none;
+							}
+						}
+					}
+
+					&::after{
+						content: '';
+						position: absolute;
+						top: calc(100% - 1px);
+						left: 0;
+						height: 1px;
+						width: 0;
+						background-color: $color-theme;
+						transition: .3s;
+					}
+
+					&:hover::after{
+						width: 100%;
+					}
+				}
+			}
+		}
+		.search-box{
+			padding: 3rem 0;
+			.search-form{
+				position: relative;
+
+				input{
+					font-size: 1.4rem;
+					padding-right: 4rem !important;
+					background-color: transparent;
+					color: $color-white;
+				}
+				
+				.search-button{
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					@include flex-center;
+					font-size: 1.4rem;
+					color: $color-white;
+					background-color: $color-theme;
+					width: 3rem;
+				}
+			}
+		}
+	}
+}

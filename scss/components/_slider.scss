@@ -1,0 +1,73 @@
+.banner-slider {
+    position: relative;
+
+    .slick-dots {
+        display: flex;
+        flex-direction: column;
+        width: 5rem;
+        height: 10rem;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        // transform: translateY(-50%);
+
+        li {
+            counter-reset: slider-dots;
+            height: auto;
+            width: auto;
+            margin-bottom: 1rem;
+
+            button {
+                outline: none;
+	            border-radius: 50%;
+                width: 4rem;
+                height: 4rem;
+                font-size: 1.2rem;
+                counter-increment: slider-dots;
+                font-weight: 700;
+	            background-color: transparent;
+	            color: $color-theme;
+	            border: 1px solid $color-theme;
+
+                &::before {
+                    content: counter(slider-dots);
+                    font-size: 0;
+                }
+            }
+
+            &.slick-active > button{
+                color: $color-white;
+                background-color: $color-theme;
+            }
+        }
+    }
+}
+
+.slider-type-2-arrows, .slider-type-3-arrows{
+    .arrows{
+        border-radius: 5px;
+        border: 1px solid $color-theme;
+        color: $color-theme;
+        font-size: 2rem;
+        padding: 1rem;
+        display: inline-block;
+        margin: 0 0.5rem;
+        cursor: pointer;
+
+        &.prev{
+
+        }
+        &.next{
+
+        }
+    }
+}
+
+.slider-type-3{
+    margin-left: -2rem;
+    margin-right: -2rem;
+
+    &-item{
+        // padding: 3rem;
+    }
+}

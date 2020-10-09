@@ -1,0 +1,19 @@
+.price-box{
+	background-color: #121517;
+	padding: 5rem;
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+	transition: .3s;
+
+	&:hover{
+		background-color: $color-theme;
+		p{
+			color: $color-white !important;
+		}
+
+		.circles{
+			transform: scale(1);
+		}
+	}
+}

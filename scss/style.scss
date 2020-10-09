@@ -1,0 +1,29 @@
+// typography --------------------------
+@import 'typography/variables';
+@import 'typography/resets';
+@import 'typography/mixins';
+@import 'typography/utilites';
+@import 'typography/common';
+@import 'typography/animations';
+
+// layout --------------------------
+@import 'layout/home';
+@import 'layout/header';
+
+// components --------------------------
+@import 'components/buttons';
+@import 'components/hover-effect';
+@import 'components/slider';
+@import 'components/banner';
+@import 'components/navbar';
+
+// sections -------------------
+@import 'sections/about';
+@import 'sections/skills';
+@import 'sections/services';
+@import 'sections/testimonials';
+@import 'sections/payments';
+@import 'sections/contact';
+@import 'sections/footer';
+
+@import 'components/responsive';
