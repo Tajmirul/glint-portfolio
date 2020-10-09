@@ -473,6 +473,7 @@ header {
         .navBar-desktop .navigations ul li a i {
           margin-left: 5px; }
       .navBar-desktop .navigations ul li ul {
+        display: none;
         position: absolute;
         top: 100%;
         background-color: #2E3D44;

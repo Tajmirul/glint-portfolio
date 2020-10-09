@@ -95,14 +95,11 @@ $(document).ready(function () {
     // desktop navigation bar -----------------
     var submenu = $('.desktop-nav-list-item > ul');
     var submenu_link = submenu.find(' > li > a');
-
-    submenu.slideUp();
-
     // enpend submenu 
     $('.desktop-nav-list .desktop-nav-list-item').hover(function() {
-        $(this).find('>ul').slideToggle(200);
+        $(this).find('>ul').slideDown(200);
     }, function() {
-        $(this).find('>ul').slideToggle(200);
+        $(this).find('>ul').slideUp(200);
     });
 
     submenu_link.hover(function() {
