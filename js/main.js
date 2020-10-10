@@ -40,7 +40,7 @@ $(document).ready(function () {
     });
 
     // hoverdir ---------------
-    $('.da-thumbs li').hoverdir()
+    $('#da-thumbs > li').hoverdir();
 
     // my code ----------------------------------------------------------------------
     // preloader

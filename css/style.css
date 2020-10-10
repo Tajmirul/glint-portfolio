@@ -650,6 +650,9 @@ section.about {
     .service-box:hover .circles {
       transform: scale(1); }
 
+.hoverdir li {
+  overflow: hidden; }
+
 .testimonials .testimonial .quote {
   line-height: 1.3; }
 
