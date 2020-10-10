@@ -32,12 +32,13 @@
 			background-color: rgba($color-white, .2);
 			position: relative;
 			border-radius: 50px;
+			overflow: hidden;
 
-			&::after{
-				content: '';
+			&-inner{
 				position: absolute;
 				height: 100%;
 				background-color: $color-theme;
+				border-radius: 50px;
 			}
 		}
 	}

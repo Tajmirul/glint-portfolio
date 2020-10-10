@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="fonts/icofont.min.css">
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/hoverdir.css">
+    <link rel="stylesheet" href="css/animate.css">
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap" rel="stylesheet">
@@ -49,7 +50,7 @@
     <!-- write your code below -->
     <header>
         <nav class="navBar">
-            <div class="navBar-top">
+            <div class="navBar-top d-none d-md-block">
                 <div class="container clearfix">
                     <div class="navBar-top-left">
                         <p class="fz-large d-inline-block text-white chat-icon m-0 mr-3"><i class="icofont-ui-chat"></i></p>
@@ -70,7 +71,7 @@
                 </div>
             </div>
             <!-- end of navBar top -->
-            <div class="navBar-desktop">
+            <div class="navBar-desktop d-none d-lg-block">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3">
@@ -116,6 +117,42 @@
                 <!-- end of container -->
             </div>
             <!-- end of navBar desktop navigations -->
+            <div class="navBar-mobile d-block d-lg-none">
+                <div class="container clearfix">
+                    <div class="d-inline-block float-left logo-area">
+                        <img src="img/logo_final.png" alt="Logo">
+                    </div>
+                    <!-- end of logo area -->
+                    <p class="d-inline-block float-right menu-icon"><i class="icofont-navigation-menu"></i></p>
+                    <div class="navBar-mobile-navigation">
+                        <div class="navigation-top list-group m-0 flex-row row">
+                            <div class="col-4 list-group-item bg-transparent rounded-0 d-flex align-items-center justify-content-center"><i class="icofont-phone"></i></div>
+                            <div class="col-4 list-group-item bg-transparent rounded-0 d-flex align-items-center justify-content-center"><i class="icofont-location-pin"></i></div>
+                            <div class="col-4 list-group-item bg-transparent rounded-0 d-flex align-items-center justify-content-center"><i class="icofont-close"></i></div>
+
+                        </div>
+                        <!-- end of navigation top -->
+                        <ul class="list-group">
+                            <li class="list-group-item fz-small py-3 bg-transparent"><a href="#" class="text-white">HOME</a></li>
+                            <li class="list-group-item fz-small py-3 bg-transparent"><a href="#" class="text-white">ABOUT</a></li>
+                            <li class="list-group-item fz-small py-3 bg-transparent"><a href="#" class="text-white">SERVICE</a></li>
+                            <li class="list-group-item fz-small py-3 bg-transparent"><a href="#" class="text-white">PORTFOLIO</a></li>
+                            <li class="list-group-item fz-small py-3 bg-transparent"><a href="#" class="text-white">PAGES</a> <i class="icofont-plus float-right"></i>
+                                <ul class="list-group ml-3 mt-2 d-none">
+                                    <li class="list-group-item fz-small py-3 rounded-0 bg-transparent border-top-0"><a href="" class="text-white">ABOUT</a></li>
+                                    <li class="list-group-item fz-small py-3 rounded-0 bg-transparent"><a href="" class="text-white">PRTFOLIO</a></li>
+                                    <li class="list-group-item fz-small py-3 rounded-0 bg-transparent"><a href="" class="text-white">SINGLE PORTFOLIO</a></li>
+                                    <li class="list-group-item fz-small py-3 rounded-0 bg-transparent"><a href="" class="text-white">BLOG</a></li>
+                                    <li class="list-group-item fz-small py-3 rounded-0 bg-transparent"><a href="" class="text-white">CONTACT ME</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end of navBar mobile navigation -->
+                </div>
+                <!-- end of container -->
+            </div>
+            <!-- end of navBar movile navigations -->
         </nav>
         <!-- end of nav -->
 
@@ -223,8 +260,8 @@
                 <div class="row mt-70">
                     <div class="col-md-6 px-5 my-4">
                         <div class="skill">
-                            <p>WEB DEVELOPMENT<span class="d-inline-block float-right">80%</span></p>
-                            <div class="skill-bar" data-skill="90"></div>
+                            <p class="font-weight-bold">WEB DEVELOPMENT<span class="d-inline-block float-right text-theme"></span></p>
+                            <div class="skill-bar" data-skill="70"><span class="wow slideInLeft skill-bar-inner"></span></div>
                         </div>
                         <!-- end of skill bar -->
                     </div>
@@ -232,8 +269,8 @@
 
                     <div class="col-md-6 px-5 my-4">
                         <div class="skill">
-                            <p>WEB DEVELOPMENT<span class="d-inline-block float-right">80%</span></p>
-                            <div class="skill-bar" data-skill="90"></div>
+                            <p class="font-weight-bold">WEB DESIGN<span class="d-inline-block float-right text-theme"></span></p>
+                            <div class="skill-bar" data-skill="90"><span class="wow slideInLeft skill-bar-inner"></span></div>
                         </div>
                         <!-- end of skill bar -->
                     </div>
@@ -241,8 +278,8 @@
 
                     <div class="col-md-6 px-5 my-4">
                         <div class="skill">
-                            <p>WEB DEVELOPMENT<span class="d-inline-block float-right">80%</span></p>
-                            <div class="skill-bar" data-skill="90"></div>
+                            <p class="font-weight-bold">GRAPHICS DESIGN<span class="d-inline-block float-right text-theme"></span></p>
+                            <div class="skill-bar" data-skill="75"><span class="wow slideInLeft skill-bar-inner"></span></div>
                         </div>
                         <!-- end of skill bar -->
                     </div>
@@ -250,8 +287,8 @@
 
                     <div class="col-md-6 px-5 my-4">
                         <div class="skill">
-                            <p>WEB DEVELOPMENT<span class="d-inline-block float-right">80%</span></p>
-                            <div class="skill-bar" data-skill="90"></div>
+                            <p class="font-weight-bold">DIGITAL MARKETING<span class="d-inline-block float-right text-theme"></span></p>
+                            <div class="skill-bar" data-skill="60"><span class="wow slideInLeft skill-bar-inner"></span></div>
                         </div>
                         <!-- end of skill bar -->
                     </div>
@@ -683,6 +720,7 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/jquery.hoverdir.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

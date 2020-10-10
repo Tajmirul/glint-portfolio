@@ -136,9 +136,6 @@ label {
 section {
   padding-bottom: 15rem; }
 
-.container {
-  max-width: 120rem; }
-
 .fz-very-small {
   font-size: 1.2rem !important; }
 
@@ -323,7 +320,7 @@ header {
   color: #0B0D0E !important;
   border-radius: 3px;
   padding: 1rem 1.5rem;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   display: inline-block; }
 
 .button-type-link {
@@ -438,7 +435,8 @@ header {
       background-size: contain; }
 
 .navBar {
-  position: relative; }
+  position: relative;
+  border-bottom: .5px solid #383838; }
   .navBar-top {
     background-color: #2E3D44; }
     .navBar-top-left {
@@ -455,7 +453,6 @@ header {
         display: block;
         border-left: 1px solid #ffffff66; }
   .navBar-desktop {
-    border-bottom: .5px solid #383838;
     position: absolute;
     top: 4.5rem;
     left: 0;
@@ -523,6 +520,28 @@ header {
           color: #fff;
           background-color: #08D665;
           width: 3rem; }
+  .navBar-mobile {
+    padding: 1rem 0; }
+    .navBar-mobile .logo-area img {
+      max-width: 150px; }
+    .navBar-mobile p.menu-icon {
+      font-size: 2rem;
+      margin: 0;
+      padding: 1.4rem 0; }
+    .navBar-mobile-navigation {
+      background-color: #2E3D44;
+      width: 0;
+      max-width: 30rem;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      overflow-x: hidden; }
+      .navBar-mobile-navigation .navigation-top div {
+        padding: 1.4rem 0;
+        text-align: center;
+        font-size: 1.4rem; }
 
 section.about {
   background-image: url("../img/about-bg-1.png");
@@ -607,12 +626,13 @@ section.about {
   height: 7px;
   background-color: rgba(255, 255, 255, 0.2);
   position: relative;
-  border-radius: 50px; }
-  .skills .skill-bar::after {
-    content: '';
+  border-radius: 50px;
+  overflow: hidden; }
+  .skills .skill-bar-inner {
     position: absolute;
     height: 100%;
-    background-color: #08D665; }
+    background-color: #08D665;
+    border-radius: 50px; }
 
 .service-box {
   padding: 4rem;

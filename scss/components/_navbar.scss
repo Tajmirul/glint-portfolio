@@ -1,5 +1,7 @@
 .navBar{
 	position: relative;
+	border-bottom: .5px solid #383838;
+
 	&-top{
 		background-color: #2E3D44;
 
@@ -27,7 +29,6 @@
 		}
 	}
 	&-desktop{
-		border-bottom: .5px solid #383838;
 		position: absolute;
 		top: 4.5rem;
 		left: 0;
@@ -120,6 +121,49 @@
 					color: $color-white;
 					background-color: $color-theme;
 					width: 3rem;
+				}
+			}
+		}
+	}
+
+	&-mobile{
+		// background-color: rgba($color-theme, .3);
+		padding: 1rem 0;
+
+		.logo-area{
+			img{
+				max-width: 150px;
+			}
+		}
+		p.menu-icon{
+			font-size: 2rem;
+			margin: 0;
+			padding: 1.4rem 0;
+		}
+
+		&-navigation{
+			background-color: #2E3D44;
+			// width: 100%;
+			width: 0;
+			max-width: 30rem;
+			height: 100%;
+			position: fixed;
+			top: 0;
+			right: 0;
+			z-index: 1;
+			overflow-x: hidden;
+
+			.navigation-top{
+				div{
+					padding: 1.4rem 0;
+					text-align: center;
+					font-size: 1.4rem;
+				}
+			}
+
+			ul{
+				li{
+
 				}
 			}
 		}

@@ -15,7 +15,7 @@ $(document).ready(function () {
 
 
     // WOW active
-    // new WOW().init();
+    new WOW().init();
 
     // slick slider for banner 
     $('.banner-slider').slick({
@@ -97,9 +97,9 @@ $(document).ready(function () {
     var submenu_link = submenu.find(' > li > a');
     // enpend submenu 
     $('.desktop-nav-list .desktop-nav-list-item').hover(function() {
-        $(this).find('>ul').slideDown(200);
+        $(this).find('>ul').stop().slideDown(200);
     }, function() {
-        $(this).find('>ul').slideUp(200);
+        $(this).find('>ul').stop().slideUp(200);
     });
 
     submenu_link.hover(function() {
@@ -107,5 +107,34 @@ $(document).ready(function () {
     }, function() {
         $(this).find('> span').stop().animate({width: '0'}, 200);
     });
+
+
+
+
+
+
+    var skill_bars = $('.skill-bar');
+    $.each(skill_bars, function(index, item) {
+        skill = $(item).data().skill;
+        $(item).parent().find('> p > span').text(skill + '%');
+        $(item).find('> span').css('width', skill + '%')
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 });
