@@ -1,23 +1,27 @@
 .banner{
-	height: 70rem;
+	// height: 70rem;
+	height: 60rem;
 
 
 	&-slider{
 		margin-top: 10rem;
+		// height: 60rem - 10rem;
 		height: 60rem - 10rem;
 
 		&-item{
 			h2{
 				font-weight: 600;
 				font-family: 'Oswald', sans-serif;
+				font-size: 4rem;
 			}
 			&.item-1{
-				background-image: url('../img/author2-1.png');
-				background-repeat: no-repeat;
-				background-position: right;
-				background-size: contain;
+
 			}
 		}
-		
+	}
+	&::after{
+		content: '';
+		display: block;
+		clear: both;
 	}
 }

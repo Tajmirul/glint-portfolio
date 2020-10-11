@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="fonts/icofont.min.css">
-    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/default.min.css">
     <link rel="stylesheet" href="css/hoverdir.css">
     <link rel="stylesheet" href="css/animate.css">
 
@@ -132,46 +132,29 @@
             <div class="navBar-mobile d-block d-lg-none">
                 <div class="container clearfix">
                     <div class="d-inline-block float-left logo-area">
-                        <img src="img/logo_final.png" alt="Logo">
+                        <a href="#"><img src="img/logo_final.png" alt="Logo"></a>
                     </div>
                     <!-- end of logo area -->
-                    <p class="d-inline-block float-right menu-icon"><i class="icofont-navigation-menu"></i></p>
+                    <p id="open-mobile-menu" class="d-inline-block float-right menu-icon"><i class="icofont-navigation-menu"></i></p>
                     <div class="navBar-mobile-navigation">
                         <div class="navigation-top list-group m-0 flex-row row">
-                            <div
-                                class="col-4 list-group-item bg-transparent rounded-0 d-flex align-items-center justify-content-center">
-                                <i class="icofont-phone"></i></div>
-                            <div
-                                class="col-4 list-group-item bg-transparent rounded-0 d-flex align-items-center justify-content-center">
-                                <i class="icofont-location-pin"></i></div>
-                            <div
-                                class="col-4 list-group-item bg-transparent rounded-0 d-flex align-items-center justify-content-center">
-                                <i class="icofont-close"></i></div>
-
+                            <div class="col-4 list-group-item bg-transparent rounded-0 d-flex align-items-center justify-content-center p-0"> <a href="#" class="text-white"><i class="icofont-phone"></i></a></div>
+                            <div class="col-4 list-group-item bg-transparent rounded-0 d-flex align-items-center justify-content-center p-0"> <a href="#" class="text-white"><i class="icofont-location-pin"></i></a></div>
+                            <div class="col-4 list-group-item bg-transparent rounded-0 d-flex align-items-center justify-content-center p-0" id="close-mobile-menu"> <a href="#" class="text-white"><i class="icofont-close"></i></a></div>
                         </div>
                         <!-- end of navigation top -->
                         <ul class="list-group">
-                            <li class="list-group-item fz-small py-3 bg-transparent"><a href="#"
-                                    class="text-white">HOME</a></li>
-                            <li class="list-group-item fz-small py-3 bg-transparent"><a href="#"
-                                    class="text-white">ABOUT</a></li>
-                            <li class="list-group-item fz-small py-3 bg-transparent"><a href="#"
-                                    class="text-white">SERVICE</a></li>
-                            <li class="list-group-item fz-small py-3 bg-transparent"><a href="#"
-                                    class="text-white">PORTFOLIO</a></li>
-                            <li class="list-group-item fz-small py-3 bg-transparent"><a href="#"
-                                    class="text-white">PAGES</a> <i class="icofont-plus float-right"></i>
-                                <ul class="list-group ml-3 mt-2 d-none">
-                                    <li class="list-group-item fz-small py-3 rounded-0 bg-transparent border-top-0"><a
-                                            href="" class="text-white">ABOUT</a></li>
-                                    <li class="list-group-item fz-small py-3 rounded-0 bg-transparent"><a href=""
-                                            class="text-white">PRTFOLIO</a></li>
-                                    <li class="list-group-item fz-small py-3 rounded-0 bg-transparent"><a href=""
-                                            class="text-white">SINGLE PORTFOLIO</a></li>
-                                    <li class="list-group-item fz-small py-3 rounded-0 bg-transparent"><a href=""
-                                            class="text-white">BLOG</a></li>
-                                    <li class="list-group-item fz-small py-3 rounded-0 bg-transparent"><a href=""
-                                            class="text-white">CONTACT ME</a></li>
+                            <li class="list-group-item fz-small py-3 bg-transparent"><a href="#" class="text-white">HOME</a></li>
+                            <li class="list-group-item fz-small py-3 bg-transparent"><a href="#" class="text-white">ABOUT</a></li>
+                            <li class="list-group-item fz-small py-3 bg-transparent"><a href="#" class="text-white">SERVICE</a></li>
+                            <li class="list-group-item fz-small py-3 bg-transparent"><a href="#" class="text-white">PORTFOLIO</a></li>
+                            <li class="list-group-item fz-small py-3 bg-transparent"><a href="#" class="text-white">PAGES</a> <i class="icofont-plus float-right expand-submenu"></i>
+                                <ul class="list-group ml-3 mt-3">
+                                    <li class="list-group-item fz-small py-3 rounded-0 bg-transparent border-top-0"><a href="" class="text-white">ABOUT</a></li>
+                                    <li class="list-group-item fz-small py-3 rounded-0 bg-transparent"><a href="" class="text-white">PRTFOLIO</a></li>
+                                    <li class="list-group-item fz-small py-3 rounded-0 bg-transparent"><a href="" class="text-white">SINGLE PORTFOLIO</a></li>
+                                    <li class="list-group-item fz-small py-3 rounded-0 bg-transparent"><a href="" class="text-white">BLOG</a></li>
+                                    <li class="list-group-item fz-small py-3 rounded-0 bg-transparent"><a href="" class="text-white">CONTACT ME</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -189,7 +172,7 @@
                 <div class="banner-slider">
                     <div class="banner-slider-item item-1">
                         <div class="row">
-                            <div class="col-md-7 py-200">
+                            <div class="col-md-7 py-100 py-md-200">
                                 <h2 class="font-oswald"><span class="text-theme">SUCCESS</span> IS THE SUM OF SMALL
                                     EFFORTS </h2>
                                 <p class="pl-20 py-2 my-5 fz-large border-left border-theme">Lorem, ipsum dolor sit,
@@ -205,7 +188,7 @@
                     <!-- end of slider item -->
                     <div class="banner-slider-item item-1">
                         <div class="row">
-                            <div class="col-md-7 py-200">
+                            <div class="col-md-7 py-100 py-md-200">
                                 <h2><span class="text-theme">SUCCESS</span> IS THE SUM OF SMALL EFFORTS </h2>
                                 <p class="pl-20 py-2 my-5 fz-large border-left border-theme">Lorem, ipsum dolor sit,
                                     amet consectetur adipisicing elit. Corrupti atque quam velit laudantium odit eveniet
@@ -231,13 +214,13 @@
         <section class="about">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5 position-relative shape">
+                    <div class="col-lg-5 position-relative shape">
                         <img src="img/about1-1.png" class="w-100 h-100" alt="" class="author-img">
                         <a href="https://www.youtube.com/watch?v=hYvqA2VFzms&ab_channel=AbdullahNahian"
                             class="play-button about-video-popup"><i class="icofont-play"></i></a>
                     </div>
                     <!-- end of col -->
-                    <div class="col-md-7 py-80 pl-80">
+                    <div class="col-lg-7 py-80 pl-80">
                         <h3 class="font-weight-bold font-oswald">FAILURE IS THE CONDIMENT THAT GIVES SUCCESS</h3>
                         <p class="my-5 fz-normal">Spend more time focusing on the important aspects of your business.
                             Turn to McCartney HR LLC in Brooklyn, NY for HR solutions. As an advanced virtual HR
@@ -269,8 +252,8 @@
                 </div>
                 <!-- end of row -->
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="p-5 skill-box">
+                    <div class="col-lg-4">
+                        <div class="p-5 skill-box m-3">
                             <p class="mb-0 text-theme fz-small">2011 - 2014 (UI DESIGNER)</p>
                             <h5 class="my-4 font-oswald">GOOGLE CORPORATION</h5>
                             <p class="fz-normal mb-5">All you need to do, is your best work together one package works
@@ -279,8 +262,8 @@
                         </div>
                     </div>
                     <!-- end of col -->
-                    <div class="col-md-4">
-                        <div class="p-5 skill-box">
+                    <div class="col-lg-4">
+                        <div class="p-5 skill-box m-3">
                             <p class="mb-0 text-theme fz-small">2011 - 2014 (UI DESIGNER)</p>
                             <h5 class="my-4 font-oswald">GOOGLE CORPORATION</h5>
                             <p class="fz-normal mb-5">All you need to do, is your best work together one package works
@@ -289,8 +272,8 @@
                         </div>
                     </div>
                     <!-- end of col -->
-                    <div class="col-md-4">
-                        <div class="p-5 skill-box">
+                    <div class="col-lg-4">
+                        <div class="p-5 skill-box m-3">
                             <p class="mb-0 text-theme fz-small">2011 - 2014 (UI DESIGNER)</p>
                             <h5 class="my-4 font-oswald">APPLE CORPORATION</h5>
                             <p class="fz-normal mb-5">All you need to do, is your best work together one package works
@@ -368,8 +351,8 @@
                 </div>
                 <!-- end of row -->
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="service-box">
+                    <div class="col-lg-4">
+                        <div class="service-box m-3">
                             <img src="img/service1-2.svg" alt="service 1">
                             <h5 class="mb-4 font-oswald">DESIGN PRINCIPALES</h5>
                             <p class="fz-normal">Need a project completed by an expert? Let’s go! Access a human
@@ -386,8 +369,8 @@
                         </div>
                     </div>
                     <!-- end of col -->
-                    <div class="col-md-4">
-                        <div class="service-box">
+                    <div class="col-lg-4">
+                        <div class="service-box m-3">
                             <img src="img/service2-2.svg" alt="service 1">
                             <h5 class="mb-4 font-oswald">DESIGN PRINCIPALES</h5>
                             <p class="fz-normal">Need a project completed by an expert? Let’s go! Access a human
@@ -404,8 +387,8 @@
                         </div>
                     </div>
                     <!-- end of col -->
-                    <div class="col-md-4">
-                        <div class="service-box">
+                    <div class="col-lg-4">
+                        <div class="service-box m-3">
                             <img src="img/service3-1.svg" alt="service 1">
                             <h5 class="mb-4 font-oswald">DESIGN PRINCIPALES</h5>
                             <p class="fz-normal">Need a project completed by an expert? Let’s go! Access a human
@@ -444,49 +427,49 @@
                 </div>
                 <!-- end of row -->
                 <ul id="da-thumbs" class="row da-thumbs">
-                    <li class="col-md-4 p-3">
+                    <li class="col-12 col-md-6 col-lg-4 p-3">
                         <a href="#">
-                            <img src="img/project1-1.png" alt="Projects">
+                            <img src="img/project1-1.png" class="mx-auto" alt="Projects">
                             <div class="bg-theme w-100 h-100 d-flex align-items-center justify-content-center">
                                 <p class="fz-normal">SOME TEXT</p>
                             </div>
                         </a>
                     </li>
-                    <li class="col-md-4 p-3">
+                    <li class="col-12 col-md-6 col-lg-4 p-3">
                         <a href="#">
-                            <img src="img/project2-1.png" alt="Projects">
+                            <img src="img/project2-1.png" class="mx-auto" alt="Projects">
                             <div class="bg-theme w-100 h-100 d-flex align-items-center justify-content-center">
                                 <p class="fz-normal">SOME TEXT</p>
                             </div>
                         </a>
                     </li>
-                    <li class="col-md-4 p-3">
+                    <li class="col-12 col-md-6 col-lg-4 p-3">
                         <a href="#">
-                            <img src="img/project3-1.png" alt="Projects">
+                            <img src="img/project3-1.png" class="mx-auto" alt="Projects">
                             <div class="bg-theme w-100 h-100 d-flex align-items-center justify-content-center">
                                 <p class="fz-normal">SOME TEXT</p>
                             </div>
                         </a>
                     </li>
-                    <li class="col-md-4 p-3">
+                    <li class="col-12 col-md-6 col-lg-4 p-3">
                         <a href="#">
-                            <img src="img/project4-1.png" alt="Projects">
+                            <img src="img/project4-1.png" class="mx-auto" alt="Projects">
                             <div class="bg-theme w-100 h-100 d-flex align-items-center justify-content-center">
                                 <p class="fz-normal">SOME TEXT</p>
                             </div>
                         </a>
                     </li>
-                    <li class="col-md-4 p-3">
+                    <li class="col-12 col-md-6 col-lg-4 p-3">
                         <a href="#">
-                            <img src="img/project1-1.png" alt="Projects">
+                            <img src="img/project1-1.png" class="mx-auto" alt="Projects">
                             <div class="bg-theme w-100 h-100 d-flex align-items-center justify-content-center">
                                 <p class="fz-normal">SOME TEXT</p>
                             </div>
                         </a>
                     </li>
-                    <li class="col-md-4 p-3">
+                    <li class="col-12 col-md-6 col-lg-4 p-3">
                         <a href="#">
-                            <img src="img/project3-1.png" alt="Projects">
+                            <img src="img/project3-1.png" class="mx-auto" alt="Projects">
                             <div class="bg-theme w-100 h-100 d-flex align-items-center justify-content-center">
                                 <p class="fz-normal">SOME TEXT</p>
                             </div>
@@ -516,15 +499,14 @@
                     <!-- end of col -->
                 </div>
                 <!-- end of row -->
-
                 <div class="slider-type-2">
                     <div class="testimonial">
                         <div class="row">
-                            <div class="col-md-2">
-                                <img src="img/testimonial1-1.jpg" alt="Client Image" class="w-100 rounded-circle">
+                            <div class="col-12 col-sm-4 col-md-2">
+                                <img src="img/testimonial1-1.jpg" alt="Client Image" class="w-100 mx-auto rounded-circle">
                             </div>
                             <!-- end of col -->
-                            <div class="col-md-10">
+                            <div class="col-12 col-sm-8 col-md-10">
                                 <img src="img/quote.png" alt="" class="d-block">
                                 <p class="fz-extra-large quote font-oswald my-5">Gilroy is a great and
                                     super-professional service provider, which brought new technologes, new methodology,
@@ -537,11 +519,11 @@
                     <!-- end of testimonial -->
                     <div class="testimonial">
                         <div class="row">
-                            <div class="col-md-2">
-                                <img src="img/testimonial1-1.jpg" alt="Client Image" class="w-100 rounded-circle">
+                            <div class="col-12 col-sm-4 col-md-2">
+                                <img src="img/testimonial1-1.jpg" alt="Client Image" class="w-100 mx-auto rounded-circle">
                             </div>
                             <!-- end of col -->
-                            <div class="col-md-10">
+                            <div class="col-12 col-sm-8 col-md-10">
                                 <img src="img/quote.png" alt="" class="d-block">
                                 <p class="fz-extra-large quote font-oswald my-5">Gilroy is a great and
                                     super-professional service provider, which brought new technologes, new methodology,
@@ -575,8 +557,8 @@
                 <!-- end of row -->
 
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="price-box text-center p-5">
+                    <div class="col-lg-4">
+                        <div class="price-box m-3 text-center p-5">
                             <img src="img/service1-2.svg" alt="" class="mb-5">
                             <h3 class="font-oswald mb-3">INFLUENCER</h3>
                             <p class="font-oswald text-theme fz-large border-bottom pb-5">Best For Small Investors</p>
@@ -597,8 +579,8 @@
                         </div>
                     </div>
                     <!-- end of col -->
-                    <div class="col-md-4">
-                        <div class="price-box text-center p-5">
+                    <div class="col-lg-4">
+                        <div class="price-box m-3 text-center p-5">
                             <img src="img/service1-2.svg" alt="" class="mb-5">
                             <h3 class="font-oswald mb-3">INFLUENCER</h3>
                             <p class="font-oswald text-theme fz-large border-bottom pb-5">Best For Small Investors</p>
@@ -619,8 +601,8 @@
                         </div>
                     </div>
                     <!-- end of col -->
-                    <div class="col-md-4">
-                        <div class="price-box text-center p-5">
+                    <div class="col-lg-4">
+                        <div class="price-box m-3 text-center p-5">
                             <img src="img/service1-2.svg" alt="" class="mb-5">
                             <h3 class="font-oswald mb-3">INFLUENCER</h3>
                             <p class="font-oswald text-theme fz-large border-bottom pb-5">Best For Small Investors</p>
@@ -744,13 +726,10 @@
                 <!-- end of row -->
                 <div class="row">
                     <div class="col-md-6 google-map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3746984.4864715985!2d88.10020927003616!3d23.49058232316446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adaaed80e18ba7%3A0xf2d28e0c4e1fc6b!2sBangladesh!5e0!3m2!1sen!2sbd!4v1602262053818!5m2!1sen!2sbd"
-                            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                            tabindex="0"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3746984.4864715985!2d88.10020927003616!3d23.49058232316446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adaaed80e18ba7%3A0xf2d28e0c4e1fc6b!2sBangladesh!5e0!3m2!1sen!2sbd!4v1602262053818!5m2!1sen!2sbd" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                     <!-- end of col -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 mt-3 mt-md-0">
                         <form name="message" data-netlify="true" class="form" method="POST">
                             <input type="text" name="name" id="name" placeholder="NAME"
                                 class="uppercase font-oswald mt-0" required>

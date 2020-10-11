@@ -44,6 +44,7 @@
 }
 
 .slider-type-2-arrows, .slider-type-3-arrows{
+    text-align: right;
     .arrows{
         border-radius: 5px;
         border: 1px solid $color-theme;
@@ -70,4 +71,8 @@
     &-item{
         // padding: 3rem;
     }
+}
+
+.slider-type-3-arrows{
+    text-align: right;
 }

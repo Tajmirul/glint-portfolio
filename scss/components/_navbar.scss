@@ -127,8 +127,11 @@
 	}
 
 	&-mobile{
-		// background-color: rgba($color-theme, .3);
 		padding: 1rem 0;
+		position: absolute;
+		width: 100%;
+		z-index: 1;
+
 
 		.logo-area{
 			img{
@@ -139,11 +142,11 @@
 			font-size: 2rem;
 			margin: 0;
 			padding: 1.4rem 0;
+			cursor: pointer;
 		}
 
 		&-navigation{
 			background-color: #2E3D44;
-			// width: 100%;
 			width: 0;
 			max-width: 30rem;
 			height: 100%;
@@ -155,15 +158,36 @@
 
 			.navigation-top{
 				div{
-					padding: 1.4rem 0;
 					text-align: center;
 					font-size: 1.4rem;
+					a{
+						padding: 1rem 0;
+						display: block;
+						width: 100%;
+					}
 				}
 			}
 
 			ul{
 				li{
-
+					position: relative;
+					i.expand-submenu{
+						color: $color-theme;
+						cursor: pointer;
+						background: #000;
+						position: absolute;
+						top: 0;
+						right: 0;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 5rem;
+						height: 4rem;
+					}
+					ul{
+						display: none;
+						background-color: lighten(#2E3D44, 5);
+					}
 				}
 			}
 		}
